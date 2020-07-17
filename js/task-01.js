@@ -1,9 +1,8 @@
 const buttonTaskOne = document.getElementById('task-one');
 buttonTaskOne.addEventListener('click', () => {
   const logItems = function (array) {
-    for (const item of array) {
-      const numberItem = array.indexOf(item) + 1;
-      console.log(`${numberItem} - ${item}\n`);
+    for (let i=0;i<array.length;i += 1) {
+      console.log(`${i+1} - ${array[i]}\n`);
     }
     console.log('\n');
   };
